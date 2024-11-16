@@ -43,7 +43,7 @@ public class LoginTest extends TestBase{
             long loadTime = end - start;
 
             // Define an acceptable load time threshold (e.g., 5000 milliseconds)
-            long acceptableLoadTime = 7000;
+            long acceptableLoadTime = 5000;
             Allure.step("Check if the loading time is less than " + acceptableLoadTime);
             Assert.assertTrue(loadTime < acceptableLoadTime, "Performance glitch user has excessive load time: " + loadTime + "ms");
             Allure.step("Check if all items are aligned left.");
