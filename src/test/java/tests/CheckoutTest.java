@@ -26,8 +26,8 @@ public class CheckoutTest extends TestBase{
         cartPage.clickOnCheckoutBtn();
 
         softAssert.assertTrue(cartPage.getErrorMsg().isDisplayed(), "Error message should be displayed for an empty cart checkout attempt.");
-//        softAssert.assertEquals("Your cart is empty. Add items before checkout.", cartPage.getErrorMsg().getText(), "Error message text mismatch.");
-        softAssert.assertEquals("", cartPage.getErrorMsg().getText(), "Error message text mismatch.");
+        softAssert.assertEquals("Your cart is empty. Add items before checkout.", cartPage.getErrorMsg().getText(), "Error message text mismatch.");
+        // softAssert.assertEquals("", cartPage.getErrorMsg().getText(), "Error message text mismatch.");
 
         softAssert.assertAll();
     }
